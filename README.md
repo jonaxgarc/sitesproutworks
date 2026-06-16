@@ -18,6 +18,7 @@ First things to customize:
 Files:
 
 - `index.html` - page structure and copy
+- `thank-you.html` - Netlify form success page
 - `styles.css` - visual design and responsive layout
 - `script.js` - mobile menu and email form helper
 - `assets/locallaunch-logo.png` - LocalLaunch logo

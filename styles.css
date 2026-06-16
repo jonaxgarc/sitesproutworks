@@ -111,10 +111,6 @@ p {
   border: 0;
 }
 
-.hidden-field {
-  display: none;
-}
-
 .site-header {
   position: sticky;
   top: 0;
