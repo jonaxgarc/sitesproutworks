@@ -234,10 +234,10 @@ p {
   min-height: auto;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(390px, 1.1fr);
   align-items: center;
-  gap: 42px;
-  padding: 54px 0 62px;
+  gap: 34px;
+  padding: 54px 0 72px;
 }
 
 .hero-copy {
@@ -344,29 +344,29 @@ p {
   display: grid;
   justify-items: center;
   gap: 8px;
-  transform: translateY(-4px);
+  transform: translateY(22px);
   animation: driftIn 900ms 120ms ease both;
 }
 
 .hero-art-card {
-  width: min(100%, 590px);
+  width: min(100%, 680px);
 }
 
 .hero-art-card img {
   width: 100%;
-  max-width: 590px;
+  max-width: 680px;
   object-fit: contain;
   animation: storefrontFloat 5.8s ease-in-out infinite;
-  filter: drop-shadow(0 18px 30px rgba(59, 48, 37, 0.14));
+  filter: drop-shadow(0 16px 22px rgba(59, 48, 37, 0.12));
 }
 
 .hero-chips {
-  width: min(100%, 560px);
+  width: min(100%, 620px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: -6px;
+  margin-top: -10px;
 }
 
 .hero-chips span {
