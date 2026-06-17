@@ -1124,23 +1124,22 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 16px;
   color: rgba(255, 253, 248, 0.72);
   font-size: 0.92rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-contact a,
 .footer-contact span {
-  padding: 7px 10px;
-  background: rgba(255, 253, 248, 0.08);
-  border: 1px solid rgba(255, 253, 248, 0.12);
-  border-radius: var(--radius);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
 
 .footer-contact a:hover {
   color: white;
-  background: rgba(255, 253, 248, 0.12);
 }
 
 @media (max-width: 1040px) {
