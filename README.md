@@ -24,5 +24,6 @@ Files:
 - `assets/site-sprout-logo.png` - Site Sprout logo with tagline
 - `assets/site-sprout-mark.png` - Site Sprout logo without tagline
 - `assets/site-sprout-icon.png` - cropped Site Sprout icon used in the header and footer
+- `assets/site-sprout-hero.png` - hero illustration of a local shop website and new lead
 - `assets/storefront-icon.png` - hero storefront illustration
 - `assets/storefront-hero.png` - cropped storefront image used on the homepage hero
