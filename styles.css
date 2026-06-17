@@ -350,12 +350,6 @@ p {
 
 .hero-art-card {
   width: min(100%, 450px);
-  padding: 24px;
-  background:
-    radial-gradient(circle at 50% 12%, rgba(244, 234, 216, 0.55), transparent 42%),
-    rgba(255, 249, 238, 0.52);
-  border: 1px solid rgba(59, 48, 37, 0.08);
-  border-radius: 18px;
 }
 
 .hero-art-card img {
