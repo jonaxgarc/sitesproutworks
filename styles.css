@@ -63,7 +63,7 @@ p {
 }
 
 h1 {
-  max-width: 620px;
+  max-width: 660px;
   margin-bottom: 28px;
   font-size: clamp(2.65rem, 4.85vw, 4.35rem);
   line-height: 1.06;
@@ -303,11 +303,11 @@ p {
 }
 
 .hero-metrics {
-  max-width: 610px;
+  max-width: 560px;
   margin-top: 34px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
 }
 
 .hero-metrics div {
@@ -343,30 +343,30 @@ p {
   z-index: 1;
   display: grid;
   justify-items: center;
-  gap: 8px;
-  transform: translateY(22px);
+  gap: 4px;
+  transform: translate(25px, 25px);
   animation: driftIn 900ms 120ms ease both;
 }
 
 .hero-art-card {
-  width: min(100%, 680px);
+  width: min(100%, 750px);
 }
 
 .hero-art-card img {
   width: 100%;
-  max-width: 680px;
+  max-width: 750px;
   object-fit: contain;
   animation: storefrontFloat 5.8s ease-in-out infinite;
   filter: drop-shadow(0 16px 22px rgba(59, 48, 37, 0.12));
 }
 
 .hero-chips {
-  width: min(100%, 620px);
+  width: min(100%, 650px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: -10px;
+  margin-top: -22px;
 }
 
 .hero-chips span {
@@ -1075,7 +1075,7 @@ p {
 
   .hero-art-card,
   .hero-chips {
-    width: min(100%, 420px);
+    width: min(100%, 560px);
   }
 
   .service-grid,
