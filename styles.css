@@ -10,6 +10,10 @@
   --sand: #ead9bf;
   --cream: #f4ead8;
   --paper: #fff9ee;
+  --oat: #f0e3ce;
+  --leaf-deep: #435039;
+  --leaf: #647247;
+  --fern: #edf1dc;
   --line: #ddd0b8;
   --mist: #e7ead8;
   --soil: #3b3025;
@@ -32,8 +36,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 86% 8%, rgba(156, 168, 111, 0.14), transparent 30%),
-    linear-gradient(180deg, rgba(255, 249, 238, 0.98), rgba(244, 234, 216, 0.76)),
+    radial-gradient(circle at 86% 8%, rgba(156, 168, 111, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(255, 249, 238, 0.98), rgba(240, 227, 206, 0.78)),
     var(--paper);
   font-family: var(--body-font);
   line-height: 1.6;
@@ -220,8 +224,9 @@ p {
   overflow: hidden;
   min-height: auto;
   background:
-    radial-gradient(circle at 76% 38%, rgba(120, 134, 77, 0.2), transparent 28%),
-    linear-gradient(90deg, rgba(255, 249, 238, 0.98) 0%, rgba(255, 249, 238, 0.88) 52%, rgba(220, 226, 200, 0.78) 100%),
+    radial-gradient(circle at 78% 36%, rgba(120, 134, 77, 0.18), transparent 30%),
+    radial-gradient(circle at 8% 82%, rgba(181, 139, 104, 0.12), transparent 28%),
+    linear-gradient(90deg, rgba(255, 249, 238, 0.98) 0%, rgba(255, 249, 238, 0.9) 52%, rgba(237, 241, 220, 0.86) 100%),
     repeating-linear-gradient(135deg, rgba(120, 134, 77, 0.045) 0 1px, transparent 1px 26px),
     var(--paper);
 }
@@ -368,7 +373,9 @@ p {
 .business-marquee {
   overflow: hidden;
   padding: 24px 0;
-  background: var(--soil);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(156, 168, 111, 0.18), transparent 28%),
+    linear-gradient(90deg, var(--soil), #34402d);
   border-top: 1px solid rgba(255, 250, 240, 0.14);
   border-bottom: 1px solid rgba(255, 250, 240, 0.14);
 }
@@ -429,8 +436,9 @@ p {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 16% 24%, rgba(120, 134, 77, 0.16), transparent 30%),
-    linear-gradient(180deg, #f3ead8, #e8dec7);
+    radial-gradient(circle at 18% 22%, rgba(120, 134, 77, 0.13), transparent 30%),
+    radial-gradient(circle at 86% 70%, rgba(181, 139, 104, 0.12), transparent 28%),
+    linear-gradient(180deg, #f6ebd8, #eee0c8);
   border-top: 1px solid rgba(58, 48, 38, 0.1);
   border-bottom: 1px solid rgba(58, 48, 38, 0.1);
 }
@@ -504,20 +512,23 @@ p {
 
 #services::before {
   background:
-    radial-gradient(circle at 92% 18%, rgba(152, 114, 84, 0.11), transparent 30%),
-    linear-gradient(135deg, var(--paper), #eef1dc);
+    radial-gradient(circle at 92% 18%, rgba(152, 114, 84, 0.1), transparent 30%),
+    radial-gradient(circle at 6% 78%, rgba(120, 134, 77, 0.12), transparent 26%),
+    linear-gradient(135deg, #fff9ee, var(--fern));
 }
 
 #packages::before {
   background:
-    radial-gradient(circle at 10% 78%, rgba(165, 174, 130, 0.18), transparent 28%),
-    linear-gradient(135deg, #fff6e7, var(--sand));
+    radial-gradient(circle at 10% 78%, rgba(165, 174, 130, 0.14), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(181, 139, 104, 0.1), transparent 26%),
+    linear-gradient(135deg, #fff4e2, var(--oat));
 }
 
 #process::before {
   background:
-    radial-gradient(circle at 88% 16%, rgba(152, 114, 84, 0.11), transparent 26%),
-    linear-gradient(135deg, var(--sage), #f4ead8);
+    radial-gradient(circle at 88% 16%, rgba(152, 114, 84, 0.1), transparent 26%),
+    radial-gradient(circle at 16% 74%, rgba(120, 134, 77, 0.14), transparent 30%),
+    linear-gradient(135deg, #e2e8cf, #f8eedc);
 }
 
 #faq::before {
@@ -525,20 +536,21 @@ p {
     radial-gradient(circle at 16% 18%, rgba(220, 226, 200, 0.18), transparent 28%),
     radial-gradient(circle at 88% 72%, rgba(156, 168, 111, 0.2), transparent 30%),
     repeating-linear-gradient(135deg, rgba(255, 250, 240, 0.045) 0 1px, transparent 1px 28px),
-    linear-gradient(135deg, #435039, #647247);
+    linear-gradient(135deg, var(--leaf-deep), var(--leaf));
 }
 
 .contact-section::before {
   background:
-    radial-gradient(circle at 22% 18%, rgba(181, 139, 104, 0.12), transparent 26%),
-    radial-gradient(circle at 92% 82%, rgba(120, 134, 77, 0.11), transparent 26%),
-    linear-gradient(135deg, #fff9ee, #eadfc9);
+    radial-gradient(circle at 22% 18%, rgba(181, 139, 104, 0.1), transparent 26%),
+    radial-gradient(circle at 92% 82%, rgba(120, 134, 77, 0.1), transparent 26%),
+    linear-gradient(135deg, #fffaf1, #efe0c8);
 }
 
 #proof {
   background:
-    radial-gradient(circle at 78% 18%, rgba(120, 134, 77, 0.16), transparent 28%),
-    linear-gradient(180deg, #efe0c7, #f7ead6);
+    radial-gradient(circle at 78% 18%, rgba(120, 134, 77, 0.14), transparent 28%),
+    radial-gradient(circle at 8% 88%, rgba(152, 114, 84, 0.13), transparent 28%),
+    linear-gradient(180deg, #e8d5b8, #f6e7d1);
   border-top: 1px solid rgba(58, 48, 38, 0.09);
   border-bottom: 1px solid rgba(58, 48, 38, 0.09);
 }
@@ -896,8 +908,9 @@ p {
 .automation-band {
   color: var(--paper);
   background:
+    radial-gradient(circle at 82% 16%, rgba(120, 134, 77, 0.18), transparent 28%),
     repeating-linear-gradient(135deg, rgba(255, 250, 240, 0.05) 0 1px, transparent 1px 26px),
-    var(--soil);
+    linear-gradient(135deg, var(--soil), #283124);
 }
 
 .automation-band p,
@@ -1110,7 +1123,9 @@ p {
 }
 
 .site-footer {
-  background: var(--soil);
+  background:
+    radial-gradient(circle at 92% 12%, rgba(120, 134, 77, 0.14), transparent 24%),
+    linear-gradient(90deg, var(--soil), #33291f);
   color: var(--paper);
 }
 
