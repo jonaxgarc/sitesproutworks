@@ -360,26 +360,6 @@ p {
   filter: drop-shadow(0 16px 22px rgba(59, 48, 37, 0.12));
 }
 
-.hero-chips {
-  width: min(100%, 650px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: -22px;
-}
-
-.hero-chips span {
-  padding: 8px 11px;
-  color: var(--ink);
-  background: rgba(255, 250, 240, 0.78);
-  border: 1px solid rgba(220, 213, 202, 0.9);
-  border-radius: var(--radius);
-  font-size: 0.9rem;
-  font-weight: 850;
-  box-shadow: 0 10px 22px rgba(58, 48, 38, 0.08);
-}
-
 .business-marquee {
   overflow: hidden;
   padding: 24px 0;
@@ -1073,8 +1053,7 @@ p {
     transform: none;
   }
 
-  .hero-art-card,
-  .hero-chips {
+  .hero-art-card {
     width: min(100%, 560px);
   }
 
