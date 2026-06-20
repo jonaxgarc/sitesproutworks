@@ -49,6 +49,11 @@
 
     <main id="main">
       <section class="hero" id="top">
+        <div class="hero-bg-elements" aria-hidden="true">
+          <span class="hero-float hero-window"></span>
+          <span class="hero-float hero-leaf-one"></span>
+          <span class="hero-float hero-leaf-two"></span>
+        </div>
         <div class="hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Websites + lead follow-up for local businesses</p>
@@ -70,11 +75,11 @@
 
             <div class="hero-metrics" aria-label="Site Sprout highlights">
               <div>
-                <strong>48 hours</strong>
+                <strong><span class="metric-number" data-count-to="48">48</span> hours</strong>
                 <span>Free website audit</span>
               </div>
               <div>
-                <strong>3 fixes</strong>
+                <strong><span class="metric-number" data-count-to="3">3</span> fixes</strong>
                 <span>Capture more leads</span>
               </div>
               <div>
@@ -617,6 +622,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
