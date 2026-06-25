@@ -878,7 +878,7 @@ p {
 }
 
 .service-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .service-card,
@@ -921,6 +921,10 @@ p {
 .proof-card:nth-child(3),
 .process-grid article:nth-child(3) {
   border-top: 6px solid var(--terracotta);
+}
+
+.service-card:nth-child(4) {
+  border-top: 6px solid var(--olive);
 }
 
 .process-grid article:nth-child(4) {
@@ -1440,7 +1444,7 @@ p {
 
   .service-grid,
   .proof-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .package-grid,
@@ -1568,6 +1572,8 @@ p {
   }
 
   .package-grid,
+  .service-grid,
+  .proof-grid,
   .process-grid,
   .contact-form,
   .care-plan-row {
