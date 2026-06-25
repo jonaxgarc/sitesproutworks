@@ -15,6 +15,8 @@ const revealTargets = Array.from(
   document.querySelectorAll(
     [
       ".business-marquee",
+      ".local-trust-heading",
+      ".local-trust-card",
       ".problem-copy",
       ".notification-stack",
       ".problem-card",
@@ -142,7 +144,7 @@ function setupRevealAnimations() {
 
   revealTargets.forEach((target) => {
     const siblings = Array.from(target.parentElement?.children || []).filter((item) =>
-      item.matches?.(".problem-card, .service-card, .proof-card, .flow-step, .package-card, article, details")
+      item.matches?.(".local-trust-card, .problem-card, .service-card, .proof-card, .flow-step, .package-card, article, details")
     );
     const index = Math.max(0, siblings.indexOf(target));
     const delay = Math.min(index, 5) * 70;
