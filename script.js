@@ -17,6 +17,7 @@ const revealTargets = Array.from(
       ".local-trust-heading",
       ".niche-card",
       ".local-trust-card",
+      ".owner-trust-card",
       ".lead-flow-card",
       ".conversion-shell",
       ".problem-copy",
@@ -29,6 +30,7 @@ const revealTargets = Array.from(
       ".package-card",
       ".care-plan-row",
       ".process-grid article",
+      ".fit-card",
       ".check-card",
       ".faq-list details",
       ".contact-copy",
@@ -145,7 +147,7 @@ function setupRevealAnimations() {
 
   revealTargets.forEach((target) => {
     const siblings = Array.from(target.parentElement?.children || []).filter((item) =>
-      item.matches?.(".niche-card, .local-trust-card, .problem-card, .service-card, .proof-card, .flow-step, .package-card, .check-card, article, details")
+      item.matches?.(".niche-card, .local-trust-card, .owner-trust-card, .problem-card, .service-card, .proof-card, .flow-step, .package-card, .fit-card, .check-card, article, details")
     );
     const index = Math.max(0, siblings.indexOf(target));
     const delay = Math.min(index, 5) * 70;
