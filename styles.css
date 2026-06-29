@@ -1944,9 +1944,9 @@ h1 {
 }
 
 .hero .hero-copy h1 {
-  max-width: 500px;
-  font-size: clamp(2.45rem, 3vw, 3.05rem);
-  line-height: 1.02;
+  max-width: 640px;
+  font-size: clamp(3rem, 4.05vw, 4rem);
+  line-height: 0.98;
 }
 
 .hero .hero-copy h1 span {
