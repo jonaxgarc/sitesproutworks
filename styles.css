@@ -79,7 +79,7 @@ h1 {
 
 h1 span {
   display: block;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 h2 {
@@ -376,6 +376,7 @@ p {
 .hero-copy {
   position: relative;
   z-index: 2;
+  min-width: 0;
   will-change: transform, opacity;
 }
 
