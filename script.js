@@ -14,8 +14,8 @@ const counterTargets = Array.from(document.querySelectorAll(".metric-number[data
 const revealTargets = Array.from(
   document.querySelectorAll(
     [
-      ".business-marquee",
       ".local-trust-heading",
+      ".niche-card",
       ".local-trust-card",
       ".lead-flow-card",
       ".conversion-shell",
@@ -29,6 +29,7 @@ const revealTargets = Array.from(
       ".package-card",
       ".care-plan-row",
       ".process-grid article",
+      ".check-card",
       ".faq-list details",
       ".contact-copy",
       ".contact-form",
@@ -116,12 +117,10 @@ function runPageLoadAnimation() {
   });
 
   gsap.to(".hero-actions .button.primary", {
-    boxShadow: "0 18px 42px rgba(58, 48, 38, 0.28)",
-    duration: 1.7,
-    delay: 2.2,
-    ease: "sine.inOut",
-    repeat: -1,
-    yoyo: true,
+    boxShadow: "0 18px 42px rgba(36, 114, 70, 0.22)",
+    duration: 0.8,
+    delay: 1.8,
+    ease: "power2.out",
   });
 }
 
@@ -146,7 +145,7 @@ function setupRevealAnimations() {
 
   revealTargets.forEach((target) => {
     const siblings = Array.from(target.parentElement?.children || []).filter((item) =>
-      item.matches?.(".local-trust-card, .problem-card, .service-card, .proof-card, .flow-step, .package-card, article, details")
+      item.matches?.(".niche-card, .local-trust-card, .problem-card, .service-card, .proof-card, .flow-step, .package-card, .check-card, article, details")
     );
     const index = Math.max(0, siblings.indexOf(target));
     const delay = Math.min(index, 5) * 70;
