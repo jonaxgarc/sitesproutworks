@@ -17,6 +17,8 @@ const revealTargets = Array.from(
       ".business-marquee",
       ".local-trust-heading",
       ".local-trust-card",
+      ".lead-flow-card",
+      ".conversion-shell",
       ".problem-copy",
       ".notification-stack",
       ".problem-card",
@@ -88,7 +90,7 @@ function runPageLoadAnimation() {
   ];
 
   gsap.set(heroText, { autoAlpha: 0, y: 24 });
-  gsap.set(".hero-art-card", { autoAlpha: 0, x: 34, y: 18, scale: 0.97 });
+  gsap.set(".lead-flow-card", { autoAlpha: 0, x: 34, y: 18, scale: 0.97 });
   gsap.set(".hero-float", { autoAlpha: 0, y: 10 });
 
   const timeline = gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -100,7 +102,7 @@ function runPageLoadAnimation() {
     .to(".hero-lede", { autoAlpha: 1, y: 0, duration: 0.58 }, "-=0.42")
     .to(".hero-actions .button", { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.08 }, "-=0.34")
     .to(".hero-metrics > div", { autoAlpha: 1, y: 0, duration: 0.52, stagger: 0.08 }, "-=0.28")
-    .to(".hero-art-card", { autoAlpha: 1, x: 0, y: 0, scale: 1, duration: 0.92 }, "-=0.86")
+    .to(".lead-flow-card", { autoAlpha: 1, x: 0, y: 0, scale: 1, duration: 0.92 }, "-=0.86")
     .to(".hero-float", { autoAlpha: 0.62, y: 0, duration: 0.6, stagger: 0.08 }, "-=0.68");
 
   gsap.to(".hero-float", {
