@@ -1642,14 +1642,15 @@ p {
 .footer-shell {
   width: min(100% - 32px, var(--max));
   margin: 0 auto;
-  padding: clamp(54px, 7vw, 76px) 0 28px;
+  padding: clamp(34px, 5vw, 48px) 0 24px;
 }
 
 .footer-main {
   display: grid;
-  grid-template-columns: minmax(240px, 1.35fr) repeat(3, minmax(130px, 0.75fr));
-  gap: clamp(30px, 5vw, 72px);
-  align-items: start;
+  grid-template-columns: minmax(260px, 1fr) auto;
+  gap: clamp(28px, 6vw, 80px);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-brand img {
@@ -1667,14 +1668,14 @@ p {
 
 .footer-brand-column {
   display: grid;
-  gap: 18px;
-  max-width: 330px;
+  gap: 14px;
+  max-width: 420px;
 }
 
 .footer-brand-column p {
-  max-width: 300px;
-  font-size: 0.98rem;
-  line-height: 1.65;
+  max-width: 410px;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .footer-column {
@@ -1721,7 +1722,13 @@ p {
 }
 
 .footer-contact {
-  word-break: break-word;
+  min-width: max-content;
+  text-align: right;
+  word-break: normal;
+}
+
+.footer-contact a {
+  white-space: nowrap;
 }
 
 .footer-contact a,
@@ -1737,8 +1744,8 @@ p {
 }
 
 .footer-bottom {
-  margin-top: clamp(38px, 5vw, 54px);
-  padding-top: 22px;
+  margin-top: clamp(28px, 4vw, 38px);
+  padding-top: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1750,6 +1757,28 @@ p {
 
 .footer-bottom p {
   color: rgba(255, 253, 248, 0.58);
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.footer-legal a {
+  color: rgba(255, 253, 248, 0.64);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.footer-legal a:hover {
+  color: white;
+  text-decoration-color: rgba(255, 253, 248, 0.56);
 }
 
 @media (max-width: 1040px) {
@@ -1915,12 +1944,25 @@ p {
 
   .footer-main {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 26px;
   }
 
   .footer-bottom {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .footer-contact {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .footer-contact a {
+    font-size: 0.92rem;
+  }
+
+  .footer-legal {
+    justify-content: flex-start;
   }
 }
 
